@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5EA33962BB02BDE003E938D /* KongsikApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA33952BB02BDE003E938D /* KongsikApp.swift */; };
+		B5EA33982BB02BDE003E938D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA33972BB02BDE003E938D /* ContentView.swift */; };
+		B5EA339A2BB02BDF003E938D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EA33992BB02BDF003E938D /* Assets.xcassets */; };
+		B5EA339E2BB02BDF003E938D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EA339D2BB02BDF003E938D /* Preview Assets.xcassets */; };
+		B5EA33A82BB02BE0003E938D /* KongsikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA33A72BB02BE0003E938D /* KongsikTests.swift */; };
+		B5EA33B22BB02BE0003E938D /* KongsikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA33B12BB02BE0003E938D /* KongsikUITests.swift */; };
+		B5EA33B42BB02BE0003E938D /* KongsikUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA33B32BB02BE0003E938D /* KongsikUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5EA33A42BB02BE0003E938D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5EA338A2BB02BDE003E938D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5EA33912BB02BDE003E938D;
+			remoteInfo = Kongsik;
+		};
+		B5EA33AE2BB02BE0003E938D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5EA338A2BB02BDE003E938D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5EA33912BB02BDE003E938D;
+			remoteInfo = Kongsik;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B5EA33922BB02BDE003E938D /* Kongsik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kongsik.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5EA33952BB02BDE003E938D /* KongsikApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KongsikApp.swift; sourceTree = "<group>"; };
+		B5EA33972BB02BDE003E938D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B5EA33992BB02BDF003E938D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5EA339B2BB02BDF003E938D /* Kongsik.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kongsik.entitlements; sourceTree = "<group>"; };
+		B5EA339D2BB02BDF003E938D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B5EA33A32BB02BE0003E938D /* KongsikTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KongsikTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5EA33A72BB02BE0003E938D /* KongsikTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KongsikTests.swift; sourceTree = "<group>"; };
+		B5EA33AD2BB02BE0003E938D /* KongsikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KongsikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5EA33B12BB02BE0003E938D /* KongsikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KongsikUITests.swift; sourceTree = "<group>"; };
+		B5EA33B32BB02BE0003E938D /* KongsikUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KongsikUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5EA338F2BB02BDE003E938D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5EA33A02BB02BE0003E938D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5EA33AA2BB02BE0003E938D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5EA33892BB02BDE003E938D = {
+			isa = PBXGroup;
+			children = (
+				B5EA33942BB02BDE003E938D /* Kongsik */,
+				B5EA33A62BB02BE0003E938D /* KongsikTests */,
+				B5EA33B02BB02BE0003E938D /* KongsikUITests */,
+				B5EA33932BB02BDE003E938D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5EA33932BB02BDE003E938D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5EA33922BB02BDE003E938D /* Kongsik.app */,
+				B5EA33A32BB02BE0003E938D /* KongsikTests.xctest */,
+				B5EA33AD2BB02BE0003E938D /* KongsikUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5EA33942BB02BDE003E938D /* Kongsik */ = {
+			isa = PBXGroup;
+			children = (
+				B5EA33952BB02BDE003E938D /* KongsikApp.swift */,
+				B5EA33972BB02BDE003E938D /* ContentView.swift */,
+				B5EA33992BB02BDF003E938D /* Assets.xcassets */,
+				B5EA339B2BB02BDF003E938D /* Kongsik.entitlements */,
+				B5EA339C2BB02BDF003E938D /* Preview Content */,
+			);
+			path = Kongsik;
+			sourceTree = "<group>";
+		};
+		B5EA339C2BB02BDF003E938D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B5EA339D2BB02BDF003E938D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5EA33A62BB02BE0003E938D /* KongsikTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5EA33A72BB02BE0003E938D /* KongsikTests.swift */,
+			);
+			path = KongsikTests;
+			sourceTree = "<group>";
+		};
+		B5EA33B02BB02BE0003E938D /* KongsikUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B5EA33B12BB02BE0003E938D /* KongsikUITests.swift */,
+				B5EA33B32BB02BE0003E938D /* KongsikUITestsLaunchTests.swift */,
+			);
+			path = KongsikUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5EA33912BB02BDE003E938D /* Kongsik */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5EA33B72BB02BE0003E938D /* Build configuration list for PBXNativeTarget "Kongsik" */;
+			buildPhases = (
+				B5EA338E2BB02BDE003E938D /* Sources */,
+				B5EA338F2BB02BDE003E938D /* Frameworks */,
+				B5EA33902BB02BDE003E938D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kongsik;
+			productName = Kongsik;
+			productReference = B5EA33922BB02BDE003E938D /* Kongsik.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5EA33A22BB02BE0003E938D /* KongsikTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5EA33BA2BB02BE0003E938D /* Build configuration list for PBXNativeTarget "KongsikTests" */;
+			buildPhases = (
+				B5EA339F2BB02BE0003E938D /* Sources */,
+				B5EA33A02BB02BE0003E938D /* Frameworks */,
+				B5EA33A12BB02BE0003E938D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5EA33A52BB02BE0003E938D /* PBXTargetDependency */,
+			);
+			name = KongsikTests;
+			productName = KongsikTests;
+			productReference = B5EA33A32BB02BE0003E938D /* KongsikTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B5EA33AC2BB02BE0003E938D /* KongsikUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5EA33BD2BB02BE0003E938D /* Build configuration list for PBXNativeTarget "KongsikUITests" */;
+			buildPhases = (
+				B5EA33A92BB02BE0003E938D /* Sources */,
+				B5EA33AA2BB02BE0003E938D /* Frameworks */,
+				B5EA33AB2BB02BE0003E938D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5EA33AF2BB02BE0003E938D /* PBXTargetDependency */,
+			);
+			name = KongsikUITests;
+			productName = KongsikUITests;
+			productReference = B5EA33AD2BB02BE0003E938D /* KongsikUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5EA338A2BB02BDE003E938D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					B5EA33912BB02BDE003E938D = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					B5EA33A22BB02BE0003E938D = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = B5EA33912BB02BDE003E938D;
+					};
+					B5EA33AC2BB02BE0003E938D = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = B5EA33912BB02BDE003E938D;
+					};
+				};
+			};
+			buildConfigurationList = B5EA338D2BB02BDE003E938D /* Build configuration list for PBXProject "Kongsik" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5EA33892BB02BDE003E938D;
+			productRefGroup = B5EA33932BB02BDE003E938D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5EA33912BB02BDE003E938D /* Kongsik */,
+				B5EA33A22BB02BE0003E938D /* KongsikTests */,
+				B5EA33AC2BB02BE0003E938D /* KongsikUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5EA33902BB02BDE003E938D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5EA339E2BB02BDF003E938D /* Preview Assets.xcassets in Resources */,
+				B5EA339A2BB02BDF003E938D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5EA33A12BB02BE0003E938D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5EA33AB2BB02BE0003E938D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5EA338E2BB02BDE003E938D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5EA33982BB02BDE003E938D /* ContentView.swift in Sources */,
+				B5EA33962BB02BDE003E938D /* KongsikApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5EA339F2BB02BE0003E938D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5EA33A82BB02BE0003E938D /* KongsikTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5EA33A92BB02BE0003E938D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5EA33B22BB02BE0003E938D /* KongsikUITests.swift in Sources */,
+				B5EA33B42BB02BE0003E938D /* KongsikUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5EA33A52BB02BE0003E938D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5EA33912BB02BDE003E938D /* Kongsik */;
+			targetProxy = B5EA33A42BB02BE0003E938D /* PBXContainerItemProxy */;
+		};
+		B5EA33AF2BB02BE0003E938D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5EA33912BB02BDE003E938D /* Kongsik */;
+			targetProxy = B5EA33AE2BB02BE0003E938D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B5EA33B52BB02BE0003E938D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5EA33B62BB02BE0003E938D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		B5EA33B82BB02BE0003E938D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Kongsik/Kongsik.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kongsik/Preview Content\"";
+				DEVELOPMENT_TEAM = V2YNV9QV27;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iodsev.sw.Kongsik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5EA33B92BB02BE0003E938D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Kongsik/Kongsik.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kongsik/Preview Content\"";
+				DEVELOPMENT_TEAM = V2YNV9QV27;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iodsev.sw.Kongsik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B5EA33BB2BB02BE0003E938D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V2YNV9QV27;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iodsev.sw.KongsikTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kongsik.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kongsik";
+			};
+			name = Debug;
+		};
+		B5EA33BC2BB02BE0003E938D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V2YNV9QV27;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iodsev.sw.KongsikTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kongsik.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kongsik";
+			};
+			name = Release;
+		};
+		B5EA33BE2BB02BE0003E938D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V2YNV9QV27;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iodsev.sw.KongsikUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kongsik;
+			};
+			name = Debug;
+		};
+		B5EA33BF2BB02BE0003E938D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V2YNV9QV27;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iodsev.sw.KongsikUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Kongsik;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5EA338D2BB02BDE003E938D /* Build configuration list for PBXProject "Kongsik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5EA33B52BB02BE0003E938D /* Debug */,
+				B5EA33B62BB02BE0003E938D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5EA33B72BB02BE0003E938D /* Build configuration list for PBXNativeTarget "Kongsik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5EA33B82BB02BE0003E938D /* Debug */,
+				B5EA33B92BB02BE0003E938D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5EA33BA2BB02BE0003E938D /* Build configuration list for PBXNativeTarget "KongsikTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5EA33BB2BB02BE0003E938D /* Debug */,
+				B5EA33BC2BB02BE0003E938D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5EA33BD2BB02BE0003E938D /* Build configuration list for PBXNativeTarget "KongsikUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5EA33BE2BB02BE0003E938D /* Debug */,
+				B5EA33BF2BB02BE0003E938D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5EA338A2BB02BDE003E938D /* Project object */;
+}
