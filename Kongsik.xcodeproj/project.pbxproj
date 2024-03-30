@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B55611112BB4725C00D49E86 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55611102BB4725C00D49E86 /* View+.swift */; };
+		B55611132BB4926800D49E86 /* KSKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55611122BB4926800D49E86 /* KSKey.swift */; };
 		B5EA33962BB02BDE003E938D /* KongsikApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA33952BB02BDE003E938D /* KongsikApp.swift */; };
 		B5EA33982BB02BDE003E938D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA33972BB02BDE003E938D /* MainView.swift */; };
 		B5EA339A2BB02BDF003E938D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EA33992BB02BDF003E938D /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B55611102BB4725C00D49E86 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		B55611122BB4926800D49E86 /* KSKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSKey.swift; sourceTree = "<group>"; };
 		B5EA33922BB02BDE003E938D /* Kongsik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kongsik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EA33952BB02BDE003E938D /* KongsikApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KongsikApp.swift; sourceTree = "<group>"; };
 		B5EA33972BB02BDE003E938D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 				B5EA33C72BB02E9A003E938D /* MealType.swift */,
 				B5EA33CB2BB03008003E938D /* Destination.swift */,
 				B5EA33CD2BB03482003E938D /* Restaurant.swift */,
+				B55611122BB4926800D49E86 /* KSKey.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 			children = (
 				B5EA33DC2BB06E4C003E938D /* CGFloat+.swift */,
 				B5EA33DE2BB06E67003E938D /* UIApplication+.swift */,
+				B55611102BB4725C00D49E86 /* View+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -370,7 +376,9 @@
 				B5EA33D12BB064A3003E938D /* SwiftSoupManager.swift in Sources */,
 				B5EA33982BB02BDE003E938D /* MainView.swift in Sources */,
 				B5EA33D92BB0686C003E938D /* ViewModelable.swift in Sources */,
+				B55611112BB4725C00D49E86 /* View+.swift in Sources */,
 				B5EA33DD2BB06E4C003E938D /* CGFloat+.swift in Sources */,
+				B55611132BB4926800D49E86 /* KSKey.swift in Sources */,
 				B5EA33CE2BB03482003E938D /* Restaurant.swift in Sources */,
 				B5EA33CC2BB03008003E938D /* Destination.swift in Sources */,
 				B5EA33C82BB02E9A003E938D /* MealType.swift in Sources */,

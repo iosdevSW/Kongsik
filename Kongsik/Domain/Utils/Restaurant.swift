@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Restaurant: String {
+enum Restaurant: String, CaseIterable {
     // 생활관
     case visionDormitory = "041301"
     case dreamDormitory = "041302"
@@ -27,6 +27,31 @@ enum Restaurant: String {
          Self.dreamDormitory,
          Self.visionDormitory,
          Self.yesanDormitory].contains(self)
+    }
+    
+    var title: String {
+        switch self {
+        case .visionDormitory:
+            "비전"
+        case .dreamDormitory:
+            "드림"
+        case .cheonanDormitory:
+            "천안 기숙사"
+        case .yesanDormitory:
+            "예산 기숙사"
+        case .sodam:
+            "소담"
+        case .nuelsom:
+            "늘솜"
+        case .cheonanStudent:
+            "천안학생식당"
+        case .cheonanEmploy:
+            "천안직원식당"
+        case .yesanStudent:
+            "예산학생식당"
+        case .yesanEmploy:
+            "예산직원식당"
+        }
     }
 }
 

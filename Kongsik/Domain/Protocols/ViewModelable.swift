@@ -11,5 +11,6 @@ import Combine
 protocol ViewModelable: ObservableObject {
     associatedtype Action
 
+    @MainActor
     func reduce(_ action: Action)
 }

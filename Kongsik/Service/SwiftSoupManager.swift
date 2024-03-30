@@ -9,6 +9,10 @@ import Foundation
 import SwiftSoup
 
 class SwiftSoupManager {
+    static let shared = SwiftSoupManager()
+    
+    private init() { }
+    
     func fetchMealInfo(restaurant: Restaurant) async throws -> [MealMenu] {
         if restaurant.isDormitory {
             return try await fetchDormitoryMealInfo(restaurant)
@@ -20,7 +24,7 @@ class SwiftSoupManager {
     // 학식, 직원식당
     private func fetchKongjuMealInfo(_ restaurant: Restaurant) async throws -> [MealMenu] {
         let urlString = Destination.dormitory(code: restaurant.rawValue).url
-        var result: [MealMenu] = []
+        let result: [MealMenu] = []
         
         guard let url = URL(string: urlString) else {
             return [] // TODO: 에러처리

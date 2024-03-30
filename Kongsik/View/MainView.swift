@@ -14,50 +14,37 @@ struct MainView: View {
     var body: some View {
         NavigationStack {
             VStack {
+                setToolbar()
                 setScrollView()
             }
-            .task {
-                viewModel.reduce(.fetchMenu)
-            }
-            .toolbar {
-                Button {
-                    print("tap!")
-                } label: {
-                    Image.init(systemName: "gear")
-                        .tint(.main)
-                }
-            }
             .background(Color.background)
+            .isLoading(viewModel.isLoading)
         }
     }
     
     @ViewBuilder
     func setScrollView() -> some View {
-        GeometryReader { proxy in
-            ScrollView(.horizontal) {
-                HStack(spacing: 32) {
-                    ForEach(Array(viewModel.menus), id: \.date) { menuInfo in
-                        setContent(menu: menuInfo, width: proxy.size.width - 32)
-                    }
+        GeometryReader { reader in
+            let w = reader.size.width
+            let h = reader.size.height
+            
+            TabView {
+                ForEach(Array(viewModel.menus), id: \.date) { menuInfo in
+                    self.setContent(menu: menuInfo)
+                        .frame(width: w-32)
                 }
-                .padding(.horizontal, 16)
             }
-            .scrollIndicators(.never)
-            .onAppear {
-                UIScrollView.appearance().isPagingEnabled = true
-            }
+            .tabViewStyle(.page)
+            .frame(width: w, height: h)
         }
     }
     
     @ViewBuilder
-    func setContent(menu: MealMenu, width: CGFloat) -> some View {
-        VStack {
-            Text("\(menu.date) (\(menu.dayType))")
-                .font(.title)
-                .padding()
-            ScrollView {
-                VStack(spacing: 20) {
-                    
+    func setContent(menu: MealMenu) -> some View {
+        
+        ScrollView(showsIndicators: false) {
+            LazyVStack(spacing: 20, pinnedViews: [.sectionHeaders]) {
+                Section {
                     setMenuCell(title: "아침",
                                 foods: menu.breakfast)
                     
@@ -68,8 +55,14 @@ struct MainView: View {
                                 foods: menu.diner)
                     
                     Spacer()
+                } header: {
+                    HStack(alignment: .center, content: {
+                        Text("\(menu.date) (\(menu.dayType))")
+                            .font(.title2)
+                            .padding()
+                            .foregroundStyle(Color.black)
+                    })
                 }
-                .frame(width: width)
             }
         }
     }
@@ -93,10 +86,48 @@ struct MainView: View {
                 .padding()
             }
         }
+        .foregroundStyle(Color.black)
         .padding(.vertical, 24)
         .frame(maxWidth: .infinity)
         .background(Color.white)
         .clipShape(.rect(cornerRadius: 12))
+    }
+    
+    @ViewBuilder
+    func setToolbar() -> some View {
+        HStack {
+            Spacer()
+            
+            Button {
+                print("tap!")
+                // TODO: 설정으로
+            } label: {
+                Image.init(systemName: "gearshape")
+            }
+            .tint(.main)
+        }
+        .padding(16)
+        .frame(width: .screenWidth)
+        .overlay {
+            Menu {
+                ForEach(Restaurant.allCases, id: \.rawValue) { restaurant in
+                    Button {
+                        viewModel.selectedRestaurant = restaurant
+                    } label: {
+                        Text(restaurant.title)
+                    }
+                }
+            } label: {
+                HStack(spacing: 8) {
+                    Image.init(systemName: "location.circle")
+                    
+                    Text(viewModel.selectedRestaurant?.title ?? "")
+                        .font(.title3)
+                        .foregroundStyle(Color.black)
+                        .lineLimit(1)
+                }
+            }
+        }
     }
 }
 
