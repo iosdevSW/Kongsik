@@ -21,4 +21,12 @@ class MealMenu: Codable {
         self.diner = diner
         self.date = date
     }
+    
+    init() {
+        self.dayType = ""
+        self.breakfast = []
+        self.lunch = []
+        self.diner = []
+        self.date = ""
+    }
 }

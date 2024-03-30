@@ -21,17 +21,87 @@ class SwiftSoupManager {
         }
     }
     
-    // 학식, 직원식당
+    // 학식, 직원식당 - 홈페이지 SSL 버전이 낮아서 도메인 ATS설정 따로 해줬음
+        
     private func fetchKongjuMealInfo(_ restaurant: Restaurant) async throws -> [MealMenu] {
-        let urlString = Destination.dormitory(code: restaurant.rawValue).url
-        let result: [MealMenu] = []
+        let urlString = Destination.kongju(code: restaurant.rawValue).url
+        var menus: [MealMenu] = []
         
         guard let url = URL(string: urlString) else {
             return [] // TODO: 에러처리
         }
         
+        let html = try String(contentsOf: url, encoding: .utf8)
+        let document: Document = try SwiftSoup.parse(html)
+        
+        let base = try document
+            .select("div.wrap-contents")
+            .select("div.container")
+            .select("div.contents")
+            .select("div#contentsEditHtml")
+            .select("article#_contentBuilder")
+            .select("div._objWidget")
+            .select("div#_JW_diet_basic")
+            .select("div.diet-menu")
+            .select("form#viewForm")
+            .select("div.diet-table")
+            .select("table._fnTable")
+            
+        let body = try base.select("tbody")
+        
+        let header = try base.select("thead")
+            
+        let table = try body.select("tr").array()
+        
+        
+        
+        // date
+        var heads = try header.select("th").array()
+        heads.removeFirst()
+        
+        for (index, head) in heads.enumerated() {
+            var dateComponent = try head.select("span").text().components(separatedBy: ".")
+            var dayType = try head.select("p").text()
+            
+            // span, p로 안나누어진 경우 처리
+            if dayType.isEmpty {
+                let component = try head.text().components(separatedBy: " ")
+                dateComponent = component.first?.components(separatedBy: ".") ?? []
+                dayType = component.last ?? ""
+            }
+            
+            menus.append(.init())
+            
+            if dateComponent.count > 2 {
+                let date = "\(dateComponent[1])월 \(dateComponent[2])일"
+                
+                menus[index].date = date
+                menus[index].dayType = dayType.filter { $0.isLetter }
+            } else {
+                menus[index].date = "날짜 로딩 실패"
+            }
+        }
+        
+        // lunch
+        if let lunchMenu = table.first {
+            let lunchFoods = try lunchMenu.select("td").array()
+            
+            for (index, lunchFood) in lunchFoods.enumerated() {
+                menus[index].lunch = try lunchFood.text().split(separator: " ").map { String($0) }.filter { !$0.isEmpty }
+            }
+        }
+        
+        // diner
+        if let dinerMenu = table.first {
+            let dinerFoods = try dinerMenu.select("td").array()
+            
+            for (index, dinerFood) in dinerFoods.enumerated() {
+                menus[index].diner = try dinerFood.text().split(separator: " ").map { String($0) }.filter { !$0.isEmpty }
+            }
+        }
+        
         // TODO: 학생 식당
-        return result
+        return menus
     }
     
     // 기숙사
