@@ -15,7 +15,18 @@ struct MainView: View {
         NavigationStack {
             VStack {
                 setToolbar()
-                setScrollView()
+                if let _ = viewModel.selectedRestaurant {
+                    setScrollView()
+                } else {
+                    VStack {
+                        Spacer()
+                        Text("상단을 탭하여 원하는 식당을 선택해주세요")
+                            .font(.body)
+                            .foregroundStyle(Color.gray)
+                        Spacer()
+                    }
+                }
+                
             }
             .background(Color.background)
             .isLoading(viewModel.isLoading)
@@ -98,16 +109,17 @@ struct MainView: View {
         HStack {
             Spacer()
             
-            Button {
-                print("tap!")
-                // TODO: 설정으로
-            } label: {
+            NavigationLink(value: MainFlow.setting,
+                           label: {
                 Image.init(systemName: "gearshape")
-            }
-            .tint(.main)
+                    .tint(.main)
+            })
         }
         .padding(16)
         .frame(width: .screenWidth)
+        .navigationDestination(for: MainFlow.self, destination: { _ in
+            SettingView()
+        })
         .overlay {
             Menu {
                 ForEach(Restaurant.allCases, id: \.rawValue) { restaurant in
@@ -121,7 +133,7 @@ struct MainView: View {
                 HStack(spacing: 8) {
                     Image.init(systemName: "location.circle")
                     
-                    Text(viewModel.selectedRestaurant?.title ?? "")
+                    Text(viewModel.selectedRestaurant?.title ?? "식당 선택")
                         .font(.title3)
                         .foregroundStyle(Color.black)
                         .lineLimit(1)

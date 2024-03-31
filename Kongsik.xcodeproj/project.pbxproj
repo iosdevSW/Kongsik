@@ -26,6 +26,10 @@
 		B5EA33D92BB0686C003E938D /* ViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA33D82BB0686C003E938D /* ViewModelable.swift */; };
 		B5EA33DD2BB06E4C003E938D /* CGFloat+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA33DC2BB06E4C003E938D /* CGFloat+.swift */; };
 		B5EA33DF2BB06E67003E938D /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EA33DE2BB06E67003E938D /* UIApplication+.swift */; };
+		B5EC17DB2BB952DB001587EE /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC17DA2BB952DB001587EE /* SettingView.swift */; };
+		B5EC17DD2BB95874001587EE /* MainView+NavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC17DC2BB95874001587EE /* MainView+NavigationStack.swift */; };
+		B5EC17DF2BB95B59001587EE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EC17DE2BB95B59001587EE /* Launch Screen.storyboard */; };
+		B5EC17E52BB9992C001587EE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EC17E42BB9992C001587EE /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 		B5EA33D82BB0686C003E938D /* ViewModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelable.swift; sourceTree = "<group>"; };
 		B5EA33DC2BB06E4C003E938D /* CGFloat+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+.swift"; sourceTree = "<group>"; };
 		B5EA33DE2BB06E67003E938D /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
+		B5EC17DA2BB952DB001587EE /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		B5EC17DC2BB95874001587EE /* MainView+NavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainView+NavigationStack.swift"; sourceTree = "<group>"; };
+		B5EC17DE2BB95B59001587EE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		B5EC17E42BB9992C001587EE /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +197,7 @@
 				B5EA33992BB02BDF003E938D /* Assets.xcassets */,
 				B5EA339B2BB02BDF003E938D /* Kongsik.entitlements */,
 				B5EA33952BB02BDE003E938D /* KongsikApp.swift */,
+				B5EC17DE2BB95B59001587EE /* Launch Screen.storyboard */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -204,8 +213,8 @@
 		B5EA33D22BB06708003E938D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B5EA33972BB02BDE003E938D /* MainView.swift */,
-				B5EA33D52BB0677C003E938D /* MainViewModel.swift */,
+				B5EC17D92BB952C7001587EE /* Setting */,
+				B5EC17D82BB952BF001587EE /* Main */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -221,6 +230,7 @@
 		B5EA33DA2BB06E3B003E938D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B5EC17E32BB99923001587EE /* Utils */,
 				B5EA33DB2BB06E40003E938D /* Extension */,
 			);
 			path = Utils;
@@ -234,6 +244,32 @@
 				B55611102BB4725C00D49E86 /* View+.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		B5EC17D82BB952BF001587EE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B5EA33972BB02BDE003E938D /* MainView.swift */,
+				B5EA33D52BB0677C003E938D /* MainViewModel.swift */,
+				B5EC17DC2BB95874001587EE /* MainView+NavigationStack.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B5EC17D92BB952C7001587EE /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				B5EC17DA2BB952DB001587EE /* SettingView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		B5EC17E32BB99923001587EE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B5EC17E42BB9992C001587EE /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5EC17DF2BB95B59001587EE /* Launch Screen.storyboard in Resources */,
 				B5EA339E2BB02BDF003E938D /* Preview Assets.xcassets in Resources */,
 				B5EA339A2BB02BDF003E938D /* Assets.xcassets in Resources */,
 			);
@@ -372,11 +409,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5EC17DD2BB95874001587EE /* MainView+NavigationStack.swift in Sources */,
 				B5EA33C52BB02DB5003E938D /* MealMenu.swift in Sources */,
 				B5EA33D12BB064A3003E938D /* SwiftSoupManager.swift in Sources */,
 				B5EA33982BB02BDE003E938D /* MainView.swift in Sources */,
+				B5EC17DB2BB952DB001587EE /* SettingView.swift in Sources */,
 				B5EA33D92BB0686C003E938D /* ViewModelable.swift in Sources */,
 				B55611112BB4725C00D49E86 /* View+.swift in Sources */,
+				B5EC17E52BB9992C001587EE /* Utils.swift in Sources */,
 				B5EA33DD2BB06E4C003E938D /* CGFloat+.swift in Sources */,
 				B55611132BB4926800D49E86 /* KSKey.swift in Sources */,
 				B5EA33CE2BB03482003E938D /* Restaurant.swift in Sources */,
@@ -551,16 +591,18 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kongsik/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "공주밥";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -591,16 +633,18 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kongsik/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "공주밥";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
