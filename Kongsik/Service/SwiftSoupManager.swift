@@ -53,8 +53,6 @@ class SwiftSoupManager {
             
         let table = try body.select("tr").array()
         
-        
-        
         // date
         var heads = try header.select("th").array()
         heads.removeFirst()
@@ -67,7 +65,7 @@ class SwiftSoupManager {
             if dayType.isEmpty {
                 let component = try head.text().components(separatedBy: " ")
                 dateComponent = component.first?.components(separatedBy: ".") ?? []
-                dayType = component.last ?? ""
+                dayType = component.filter { $0.first?.isLetter == true }.first ?? ""
             }
             
             menus.append(.init())
@@ -117,7 +115,7 @@ class SwiftSoupManager {
             let html = try String(contentsOf: url, encoding: .utf8)
             let document: Document = try SwiftSoup.parse(html)
             
-            let foodInfo = try document
+            let base = try document
                 .select("div#mqLayout")
                 .select("div#mqSubCont")
                 .select("div#mqCont_box")
@@ -129,7 +127,7 @@ class SwiftSoupManager {
             //                    .select("p.food-head")
             //                    .select("span.head-cont").text()
             //
-            let body = try foodInfo
+            let body = try base
                 .select("table.table-board")
                 .select("tbody")
             
